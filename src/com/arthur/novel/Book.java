@@ -4,16 +4,23 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+import com.arthur.bloomfilter.BloomFilter;
+
 public class Book {
 
-	private Category category;
+	private Category category = new Category();
 	private String name;
-	private String uri;
+	private String DEFAULT_NAME = "BOOK";
+	private String url;
 	private String author;
 	private String bookId;
 	private LinkedList<Chapter> chapters;
 	
+	//【待补充】利用bloomfilter对chapter的url进行查重；
+	private BloomFilter chapterBloomFilter = new BloomFilter();		
+	
 	public Book(){
+		this.name = DEFAULT_NAME;
 		this.chapters = new LinkedList<Chapter>();
 	}
 	
@@ -29,6 +36,19 @@ public class Book {
 	public Category getCategory(){
 		return category;
 	}
+
+	public Chapter newChapter(){
+		Chapter chapter = new Chapter();
+		addChapter(chapter);
+		return chapter;
+	}
+	
+	public Chapter newChapter(String url){
+		Chapter chapter = new Chapter();
+		chapter.setUrl(url);
+		addChapter(chapter);
+		return chapter;
+	}
 	
 	public void addChapter(Chapter chapter){
 		chapter.setBook(this);
@@ -43,13 +63,13 @@ public class Book {
 		return chapters;
 	}
 	
-/*	public void setUri(String uri){
-		this.uri = uri;
+	public void setUrl(String url){
+		this.url = url;
 	}
 	
-	public String getUri(){
-		return uri;
-	}*/
+	public String getUrl(){
+		return url;
+	}
 	
 	public void setName(String name){
 		this.name = name;

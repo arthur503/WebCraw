@@ -8,7 +8,7 @@ import java.io.Writer;
 
 import org.apache.log4j.Logger;
 
-import com.arthur.crawler.Main;
+import com.arthur.main.Main;
 import com.arthur.novel.Book;
 import com.arthur.novel.Chapter;
 
@@ -58,7 +58,7 @@ public class BookWriter {
 		logger.debug("Write Book "+book.getName()+" Done!");
 	}
 
-	public void writeChapter(Chapter chapter){
+	public synchronized void writeChapter(Chapter chapter){
 
 //		Chapter chapter = book.getChapter(i);
 		
@@ -81,11 +81,12 @@ public class BookWriter {
 			bw.write(chapter.toString());							
 			bw.close();
 			logger.debug("Write File "+chapterFile.getAbsolutePath()+" Done!");
+//			logger.debug("Write Chapter "+chapter.getName()+" Done!");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
+			logger.debug("ERROR in Write Chapter "+chapter.getName()+"!");
 			e.printStackTrace();
 		}
-		logger.debug("Write Chapter "+chapter.getName()+" Done!");
 	
 	}
 	

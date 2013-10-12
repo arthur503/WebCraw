@@ -6,12 +6,25 @@ public class Site {
 
 	public static final String BASE_URI = "D:\\data\\webcraw";
 	private String name;
-	private String uri;
+	private String DEFAULT_NAME = "SITE";
+	private String url;
 	private LinkedList<Category> categories;
+	
+	public Site(){
+		this.name = DEFAULT_NAME;
+		this.categories = new LinkedList<Category>();
+	}
 	
 	public Site(String name){
 		this.name = name;
 		this.categories = new LinkedList<Category>();
+	}
+	
+	public Category newCategory(){
+		//设置category中的site参数。
+		Category category = new Category();
+		addCategory(category);
+		return category;
 	}
 	
 	public void addCategory(Category category){
@@ -32,10 +45,14 @@ public class Site {
 		return name;
 	}
 	
-/*	public void setUri(String uri){
-		this.uri = uri;
+	public void setUrl(String url){
+		this.url = url;
 	}
-	*/
+	
+	public String getUrl(){
+		return url;
+	}
+
 	public String getSiteBaseUri(){
 		return BASE_URI;
 	}

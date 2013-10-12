@@ -1,11 +1,8 @@
 package com.arthur.parser;
 
-import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.LinkedList;
-import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.jsoup.Jsoup;
@@ -13,30 +10,59 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import com.arthur.bookfile.BookWriter;
 import com.arthur.crawler.Crawler;
-import com.arthur.crawler.Main;
+import com.arthur.main.Main;
 import com.arthur.novel.Book;
+import com.arthur.novel.Category;
 import com.arthur.novel.Chapter;
+import com.arthur.novel.Site;
 import com.arthur.utils.UniCodeConveter;
 
-public class HTMLParser {
+public class HtmlParser {
 
 	static Logger logger = Logger.getLogger(Main.class.getName());
-	private HTMLFilter filter;
+	private SiteHtmlFilter filter;
 	
-	public HTMLParser(HTMLFilter filter){
+	public HtmlParser(SiteHtmlFilter filter){
 		this.filter = filter;
 	}
 	
-	public Book getBook(String novelUrl){
-		Book book = new Book("人皇");
+	/**
+	 * 待补充
+	 * @param site
+	 * @return
+	 */
+	public Site parseSite(Site site){
+		//TODO...
+		
+		return site;
+	}
+	
+	
+	/**
+	 * 待补充
+	 * @param category
+	 * @return
+	 */
+	public Category parseCategory(Category category){
+		//TODO...
+		
+		return category;
+	}
+	
+	public Book parseBook(Book book){
+//		Book book = new Book("人皇");
 //		String filePath = "D:\\data\\webcraw\\list.htm";
 		
-		List<String> chapterUrls = new LinkedList<String>(); 
+		if(book.getUrl() == null){
+			logger.error("NULL BOOK URL!");
+			return null;
+		}
+		
+//		List<String> chapterUrls = new LinkedList<String>(); 
 		
 		try {
-			Document doc = Jsoup.parse(new URL(novelUrl), 3000);
+			Document doc = Jsoup.parse(new URL(book.getUrl()), 3000);
 //			Document doc = Jsoup.parse(new File(filePath), "UTF-8");
 			
 			//get property
@@ -45,7 +71,6 @@ public class HTMLParser {
 			for(Element element : property){
 				String s = element.toString();
 				if(getChapterProperty(s, "BookName") != null){
-					logger.debug(new String(getChapterProperty(s, "BookName")));
 					book.setName(getChapterProperty(s, "BookName"));
 				}
 				if(getChapterProperty(s, "AuthorName") != null){
@@ -59,15 +84,16 @@ public class HTMLParser {
 			//get chapters
 			Element element = doc.getElementById("content");
 			Elements links = element.getElementsByClass("list");
-			String chapterBaseUrl = "http://read.qidian.com";
+			
 			for(Element link : links){				
 				Elements scripts = link.getElementsByAttribute("href");
 				for(Element script : scripts){		
 					String chapterUrl = script.attr("href");
 					//can only fetch non-vip chapter.
 					if(!chapterUrl.contains("vipreader")){
-						chapterUrl = chapterBaseUrl+chapterUrl;	
-						chapterUrls.add(chapterUrl);
+						chapterUrl = Chapter.BASE_URL + chapterUrl;	
+//						chapterUrls.add(chapterUrl);
+						book.newChapter(chapterUrl);
 					}
 //					logger.debug("chapterUrl:"+chapterUrl);
 				}
@@ -80,34 +106,24 @@ public class HTMLParser {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
-		
-		//仅测试前30章
-		BookWriter bw = new BookWriter();
-		for(int i=0;i<chapterUrls.size();i++){
-			Chapter chapter = getChapter(chapterUrls.get(i));
-			chapter.setBook(book);
-			book.addChapter(chapter);
-//			bw.writeChapter(chapter);
-		}
-		
-//		logger.debug(book.toString());
+		}		
+		logger.debug("Parse book "+book.getName()+" Done!");	
 		return book;
 	}
 	
 	/**
 	 * Use jsoup to get txtHttpUrl from html code.
 	 */
-	public Chapter getChapter(String chapterUrl){
+	public Chapter parseChapter(Chapter chapter){
 
 //		String filePath = "D:\\data\\webcraw\\qidian.html";
 		
-		Chapter c = new Chapter();		
-		String txtHttpUrl = null;
+		String chapterTxtUrl = null;
 		
 		try {
 //			Document doc = Jsoup.parse(new File(filePath), "UTF-8");
-			Document doc = Jsoup.connect(chapterUrl).get();
+//			Document doc = Jsoup.parse(new URL(chapter.getUrl()), 3000);
+			Document doc = Jsoup.connect(chapter.getUrl()).get();
 			
 			//get chapter property
 			Element head1 = doc.getElementById("Head1");
@@ -116,10 +132,10 @@ public class HTMLParser {
 				String s = element.toString();
 				if(getChapterProperty(s, "chapterName") != null)
 				{
-					c.setName(getChapterProperty(s, "chapterName"));
+					chapter.setName(getChapterProperty(s, "chapterName"));
 				}
 				if(getChapterProperty(s, "chapterId") != null){
-					c.setId(getChapterProperty(s, "chapterId"));
+					chapter.setId(getChapterProperty(s, "chapterId"));
 				}
 				
 			}
@@ -129,16 +145,14 @@ public class HTMLParser {
 			for(Element link : links){
 				Elements scripts = link.getElementsByAttribute("src");
 				for(Element script : scripts){		
-					txtHttpUrl = script.attr("src");
+					chapterTxtUrl = script.attr("src");
 					Crawler crawler = new Crawler();
-					String content = crawler.getTextFile(txtHttpUrl);
+					String content = crawler.getTextFile(chapterTxtUrl);
 					
 					//【待优化】注：此处可以使用正则表达式来去除<p></p>标签！
 					content = content.replaceAll("<p>", "\n");
 					content = content.replace("</p>", "\n");
-					c.setContent(content);
-//					logger.debug("Txt Url:"+txtHttpUrl);
-					logger.debug("Get chapter "+c.getName()+" CONTENT Done!");					
+					chapter.setContent(content);
 				}
 				
 			}
@@ -147,7 +161,8 @@ public class HTMLParser {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return c;
+		logger.debug("Parse chapter "+chapter.getName()+" Done!");	
+		return chapter;
 	}
 
 	//【待优化】http://www.oschina.net/question/587638_60715 上说解析script可以用ScriptEngine(執行js)提取信息。

@@ -13,6 +13,8 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import com.arthur.main.Main;
+
 public class Crawler {
 
 	static Logger logger = Logger.getLogger(Main.class.getName());

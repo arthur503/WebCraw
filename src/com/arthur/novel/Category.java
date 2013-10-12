@@ -4,10 +4,16 @@ import java.util.LinkedList;
 
 public class Category {
 	
-	private Site site;
+	private Site site = new Site();
 	private String name;
-	private String uri;
+	private String DEFAULT_NAME = "CATEGORY";
+	private String url;
 	private LinkedList<Book> books;
+	
+	public Category(){
+		this.name = DEFAULT_NAME;
+		this.books = new LinkedList<Book>();
+	}
 	
 	public Category(String name){
 		this.name = name;
@@ -21,6 +27,12 @@ public class Category {
 	
 	public Site getSite(){
 		return site;
+	}
+
+	public Book newBook(){
+		Book book = new Book();
+		addBook(book);
+		return book;
 	}
 	
 	public void addBook(Book book){
@@ -41,11 +53,11 @@ public class Category {
 		return name;
 	}
 	
-/*	public void setUri(String uri){
-		this.uri = uri;
+	public void setUrl(String url){
+		this.url = url;
 	}
 	
-	public String getUri(){
-		return uri;
-	}*/
+	public String getUrl(){
+		return url;
+	}
 }
