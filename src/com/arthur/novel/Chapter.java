@@ -9,6 +9,7 @@ public class Chapter {
 	private String id;
 	private String content;
 	public static final String BASE_URL = "http://read.qidian.com";
+	private long updateTime;
 	
 	public Chapter(){
 		this.name = DEFAULT_NAME;
@@ -58,6 +59,14 @@ public class Chapter {
 	
 	public String getContent(){
 		return content;
+	}
+	
+	public long getUpdateTime(){
+		return updateTime;
+	}
+	
+	public void setUpdateTime(long i){
+		this.updateTime = i;
 	}
 	
 	

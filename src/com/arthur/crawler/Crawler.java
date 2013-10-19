@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 
 import org.apache.log4j.Logger;
@@ -15,13 +16,10 @@ import org.jsoup.select.Elements;
 
 import com.arthur.main.Main;
 
-public class Crawler {
+public class Crawler{
 
 	static Logger logger = Logger.getLogger(Main.class.getName());
 	
-	/**
-	 * 要改成单例模式吗？还是类似最多十个的限制？
-	 */
 	public Crawler(){
 //		log.debug("Create a new crawler.");
 	}
@@ -64,17 +62,18 @@ public class Crawler {
 	}
 	
 
-	
-	public String getTextFile(String url){
+	//不catch exception，交由调用类处理。
+	public synchronized String getTextFile(String url) throws IOException {
 //		logger.debug("Craw to get Txt content from:"+url);
 		
 		String textCode = "";
-		try{
+//		try{
 			
 			URL httpUrl = new URL(url);
 			HttpURLConnection connection = (HttpURLConnection) httpUrl.openConnection();
 //			connection.connect();
 			connection.setRequestProperty("Accept-Charset","GB2312");
+			connection.setRequestProperty("Connection", "keep-alive");
 			
 			InputStream is = connection.getInputStream();
 			BufferedReader br = new BufferedReader(new InputStreamReader(is,"GB2312"));
@@ -86,11 +85,12 @@ public class Crawler {
 			is.close();
 			connection.disconnect();
 			
-		}catch(Exception e){
+//		}
+/*		catch(Exception e){
 			e.printStackTrace();
-		}
+		}*/
 		if(textCode == ""){
-			System.out.println("ERROR!GET NULL HTML!");
+			System.out.println("ERROR!GET NULL HTML IN CRAWLER!");
 		}
 		
 		return textCode;

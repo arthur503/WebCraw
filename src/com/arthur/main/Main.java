@@ -1,15 +1,16 @@
 package com.arthur.main;
 
-import java.util.LinkedList;
-import java.util.List;
-
 import org.apache.log4j.Logger;
 
+import com.arthur.bookwriter.BookWriter;
+import com.arthur.novel.Book;
+import com.arthur.novel.Category;
 import com.arthur.novel.Chapter;
+import com.arthur.novel.Site;
 import com.arthur.parser.HtmlParser;
 import com.arthur.parser.SiteHtmlFilter;
 import com.arthur.task.Task;
-import com.arthur.task.TaskManager;
+import com.arthur.task.TaskThreadManager;
 
 public class Main {
 
@@ -18,41 +19,52 @@ public class Main {
 	public static void main(String[] argv){
 		
 		String bookUrl = "http://read.qidian.com/BookReader/2524770.aspx";
+		String chapterUrl = "http://read.qidian.com/BookReader/2524770,44100214.aspx";
+		String categoryUrl = "http://all.qidian.com/Book/BookStore.aspx?Type=0&ChannelId=21&SubCategoryId=8&PageIndex=1&OrderId=6&P=All";
 		HtmlParser parser = new HtmlParser(new SiteHtmlFilter());
+		TaskThreadManager tm = new TaskThreadManager();
 		
-/*		Site site = new Site("qidian");
+		System.out.println("Begin webcraw...");
+		
+		Site site = new Site("qidian");
 		Category category = site.newCategory();		
-		Book book = category.newBook();
-		book.setUrl(bookUrl);
-		logger.debug(book.getUrl());		*/
+		category.setUrl(categoryUrl);
+		category.addBook(bookUrl);
+//		book.setUrl(bookUrl);
+/*		book.setUrl(bookUrl);
+		parser.parseBook(book);*/
 		
-		//仅测试前30章
+		tm.addTask(category);
+//		tm.addTask(book);	
+		logger.debug("Task count:"+tm.size());
+//		tm.addTask(book);	
+		
+		//write book
 /*		BookWriter bw = new BookWriter();
-		for(int i=0;i<book.getChapters().size();i++){
+		for(int i=0;i<book.getChapters().size() && i<30;i++){
 			Chapter chapter = book.getChapter(i);
-			parser.parseChapter(chapter);
-			bw.writeChapter(chapter);
-		}		
-		logger.debug("Write Book "+book.getName()+" Done!");*/
+//			parser.parseChapter(chapter);
+			tm.addTask(new Task(chapter));
+//			bw.writeChapter(chapter);
+		}	*/	
+//		logger.debug("Add Book "+book.getName()+" to TaskThreadManager Done!");
 		
 //		book = parser.parseBook(book);
 		
 		//test taskmanager
-		String chapterUrl = "http://read.qidian.com/BookReader/2524770,44100214.aspx";
 
-		TaskManager tm = new TaskManager();
-		//测试多线程，添加100个相同任务。
+/*		//测试多线程，添加100个相同任务。
 		Task task;
 		for(int i=0;i<100;i++){
 			Chapter chapter = new Chapter();
 			chapter.setUrl(chapterUrl);
 			chapter.setName("Chapter "+i);
 			tm.addTask(new Task(chapter));
-		}
+		}*/
 //		logger.debug("tasklist info:\n"+tm.getTaskListInfo());
-		logger.debug("task count:"+tm.size());
+		logger.debug("Task count:"+tm.size());
 
-		tm.executeTask();
+//		tm.executeTask();
 		
 		logger.debug("task manager in main done!");
 

@@ -1,35 +1,182 @@
-DEBUG pool-1-thread-6 com.arthur.main.Main - Parse chapter 第二章 远古龙洞 Done!
-         DEBUG pool-1-thread-6 com.arthur.main.Main - TaskThread 5 parse TASK 83 chapter Task_id_83_第二章 远古龙洞 done!
-         DEBUG pool-1-thread-7 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\BOOK\Task_id_97_第二章 远古龙洞.txt Done!
-         DEBUG pool-1-thread-7 com.arthur.main.Main - in synchronized end.
-         DEBUG pool-1-thread-6 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\BOOK\Task_id_83_第二章 远古龙洞.txt Done!
-         DEBUG pool-1-thread-6 com.arthur.main.Main - in synchronized end.
-         DEBUG pool-1-thread-10 com.arthur.main.Main - Parse chapter 第二章 远古龙洞 Done!
-         DEBUG pool-1-thread-10 com.arthur.main.Main - TaskThread 9 parse TASK 80 chapter Task_id_80_第二章 远古龙洞 done!
-         DEBUG pool-1-thread-1 com.arthur.main.Main - Parse chapter 第二章 远古龙洞 Done!
-         DEBUG pool-1-thread-1 com.arthur.main.Main - TaskThread 0 parse TASK 96 chapter Task_id_96_第二章 远古龙洞 done!
-         DEBUG pool-1-thread-10 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\BOOK\Task_id_80_第二章 远古龙洞.txt Done!
-         DEBUG pool-1-thread-10 com.arthur.main.Main - in synchronized end.
-         DEBUG pool-1-thread-1 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\BOOK\Task_id_96_第二章 远古龙洞.txt Done!
-         DEBUG pool-1-thread-1 com.arthur.main.Main - in synchronized end.
-         DEBUG pool-1-thread-3 com.arthur.main.Main - Parse chapter 第二章 远古龙洞 Done!
-         DEBUG pool-1-thread-3 com.arthur.main.Main - TaskThread 2 parse TASK 86 chapter Task_id_86_第二章 远古龙洞 done!
-         DEBUG pool-1-thread-3 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\BOOK\Task_id_86_第二章 远古龙洞.txt Done!
-         DEBUG pool-1-thread-3 com.arthur.main.Main - in synchronized end.
-         DEBUG pool-1-thread-5 com.arthur.main.Main - Parse chapter 第二章 远古龙洞 Done!
-         DEBUG pool-1-thread-5 com.arthur.main.Main - TaskThread 4 parse TASK 99 chapter Task_id_99_第二章 远古龙洞 done!
-         DEBUG pool-1-thread-5 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\BOOK\Task_id_99_第二章 远古龙洞.txt Done!
-         DEBUG pool-1-thread-5 com.arthur.main.Main - in synchronized end.
-         DEBUG pool-1-thread-8 com.arthur.main.Main - Parse chapter 第二章 远古龙洞 Done!
-         DEBUG pool-1-thread-8 com.arthur.main.Main - TaskThread 7 parse TASK 95 chapter Task_id_95_第二章 远古龙洞 done!
-         DEBUG pool-1-thread-8 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\BOOK\Task_id_95_第二章 远古龙洞.txt Done!
-         DEBUG pool-1-thread-8 com.arthur.main.Main - in synchronized end.
-         DEBUG pool-1-thread-9 com.arthur.main.Main - Parse chapter 第二章 远古龙洞 Done!
-         DEBUG pool-1-thread-9 com.arthur.main.Main - TaskThread 8 parse TASK 90 chapter Task_id_90_第二章 远古龙洞 done!
-         DEBUG pool-1-thread-9 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\BOOK\Task_id_90_第二章 远古龙洞.txt Done!
-         DEBUG pool-1-thread-9 com.arthur.main.Main - in synchronized end.
-         DEBUG pool-1-thread-2 com.arthur.main.Main - Parse chapter 第二章 远古龙洞 Done!
-         DEBUG pool-1-thread-2 com.arthur.main.Main - TaskThread 1 parse TASK 59 chapter Task_id_59_第二章 远古龙洞 done!
-         DEBUG pool-1-thread-2 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\BOOK\Task_id_59_第二章 远古龙洞.txt Done!
-         DEBUG pool-1-thread-2 com.arthur.main.Main - in synchronized end.
+DEBUG pool-1-thread-49 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\剑道独神\Task_id_006945_11 手段尽出！杀伐果断.txt Done!
+         DEBUG pool-1-thread-37 com.arthur.main.Main - TaskThread 36 parse TASK 7183 chapter Task_id_007183_第二百六十九章 正道联盟 done!
+         DEBUG pool-1-thread-37 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\霸世剑尊\Task_id_007183_第二百六十九章 正道联盟.txt Done!
+         DEBUG pool-1-thread-56 com.arthur.main.Main - TaskThread 55 parse TASK 7181 chapter Task_id_007181_第六章 伍老的身份【求点击收藏推荐^_^ done!
+         DEBUG pool-1-thread-56 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\铁血之惊世至尊\Task_id_007181_第六章 伍老的身份【求点击收藏推荐^_^.txt Done!
+         DEBUG pool-1-thread-87 com.arthur.main.Main - TaskThread 86 parse TASK 7169 chapter Task_id_007169_序章一 落晖森林的试炼 done!
+         DEBUG pool-1-thread-87 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\穹尊\Task_id_007169_序章一 落晖森林的试炼.txt Done!
+         DEBUG pool-1-thread-61 com.arthur.main.Main - TaskThread 60 parse TASK 7178 chapter Task_id_007178_第二百七十五章 古老部落 done!
+         DEBUG pool-1-thread-61 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\霸世剑尊\Task_id_007178_第二百七十五章 古老部落.txt Done!
+         DEBUG pool-1-thread-15 com.arthur.main.Main - TaskThread 14 parse TASK 7179 chapter Task_id_007179_第三十八章 老虎不发猫，你当我病危啊？ done!
+         DEBUG pool-1-thread-15 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\一子童心震乾坤\Task_id_007179_第三十八章 老虎不发猫，你当我病危啊？.txt Done!
+         DEBUG pool-1-thread-36 com.arthur.main.Main - TaskThread 35 parse TASK 6972 chapter Task_id_006972_第六章 祸事上门 done!
+         DEBUG pool-1-thread-74 com.arthur.main.Main - TaskThread 73 parse TASK 7182 chapter Task_id_007182_第五十二章 万魂大作战 （二） done!
+         DEBUG pool-1-thread-36 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\大玄武\Task_id_006972_第六章 祸事上门.txt Done!
+         DEBUG pool-1-thread-74 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\一子童心震乾坤\Task_id_007182_第五十二章 万魂大作战 （二）.txt Done!
+         DEBUG pool-1-thread-41 com.arthur.main.Main - TaskThread 40 parse TASK 7185 chapter Task_id_007185_第366章 北灵宗选徒 done!
+         DEBUG pool-1-thread-41 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\霸世剑尊\Task_id_007185_第366章 北灵宗选徒.txt Done!
+         DEBUG pool-1-thread-33 com.arthur.main.Main - TaskThread 32 parse TASK 6980 chapter Task_id_006980_第三百三十四章 秦岩VS孔不用 done!
+         DEBUG pool-1-thread-33 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\霸世剑尊\Task_id_006980_第三百三十四章 秦岩VS孔不用.txt Done!
+         DEBUG pool-1-thread-19 com.arthur.main.Main - TaskThread 18 parse TASK 6984 chapter Task_id_006984_第十二章 找麻烦【求点击收藏推荐^_^ done!
+         DEBUG pool-1-thread-19 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\铁血之惊世至尊\Task_id_006984_第十二章 找麻烦【求点击收藏推荐^_^.txt Done!
+         DEBUG pool-1-thread-71 com.arthur.main.Main - TaskThread 70 parse TASK 6977 chapter Task_id_006977_第二百七十四章 进入魔土 done!
+         DEBUG pool-1-thread-71 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\霸世剑尊\Task_id_006977_第二百七十四章 进入魔土.txt Done!
+         DEBUG pool-1-thread-85 com.arthur.main.Main - TaskThread 84 parse TASK 6989 chapter Task_id_006989_第二百九十九章 强势女皇 done!
+         DEBUG pool-1-thread-85 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\霸世剑尊\Task_id_006989_第二百九十九章 强势女皇.txt Done!
+         DEBUG pool-1-thread-54 com.arthur.main.Main - TaskThread 53 parse TASK 7177 chapter Task_id_007177_第四十九章 密道里面耍流氓！ done!
+         DEBUG pool-1-thread-54 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\一子童心震乾坤\Task_id_007177_第四十九章 密道里面耍流氓！.txt Done!
+         DEBUG pool-1-thread-39 com.arthur.main.Main - TaskThread 38 parse TASK 7176 chapter Task_id_007176_第九十六章 苗江 done!
+         DEBUG pool-1-thread-39 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\大玄武\Task_id_007176_第九十六章 苗江.txt Done!
+         DEBUG pool-1-thread-55 com.arthur.main.Main - TaskThread 54 parse TASK 7186 chapter Task_id_007186_第二百七十八章 秦岩的身世 done!
+         DEBUG pool-1-thread-55 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\霸世剑尊\Task_id_007186_第二百七十八章 秦岩的身世.txt Done!
+         DEBUG pool-1-thread-22 com.arthur.main.Main - TaskThread 21 parse TASK 7188 chapter Task_id_007188_第四十五章 矿洞入口，他们不是善类！ done!
+         DEBUG pool-1-thread-22 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\一子童心震乾坤\Task_id_007188_第四十五章 矿洞入口，他们不是善类！.txt Done!
+         DEBUG pool-1-thread-23 com.arthur.main.Main - TaskThread 22 parse TASK 7187 chapter Task_id_007187_第五十章 练出真元！ done!
+         DEBUG pool-1-thread-23 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\一子童心震乾坤\Task_id_007187_第五十章 练出真元！.txt Done!
+         DEBUG pool-1-thread-53 com.arthur.main.Main - TaskThread 52 parse TASK 7189 chapter Task_id_007189_第128节万古杀机（下） done!
+         DEBUG pool-1-thread-53 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\亡灵宝卷\Task_id_007189_第128节万古杀机（下）.txt Done!
+         ERROR pool-1-thread-77 com.arthur.main.Main - 
+>>>>ERROR in parse Chapter 更新！:http://read.qidian.com/BookReader/2689517,48151220.aspx Add to tasklist again. Task Id:7190 retryCounter:1267 giveUpCounter:15
+
+         DEBUG pool-1-thread-77 com.arthur.main.Main - TaskThread 76 parse TASK 5937 chapter Task_id_005937_更新！ done!
+         ERROR pool-1-thread-77 com.arthur.main.Main - ERROR in book writer writeChapter: CHAPTER IS NULL!
+         ERROR pool-1-thread-66 com.arthur.main.Main - 
+>>>>ERROR in parse Chapter 第五章 轮回界冥龙:http://read.qidian.com/BookReader/2989580,48547008.aspx Add to tasklist again. Task Id:7191 retryCounter:1268 giveUpCounter:15
+
+         DEBUG pool-1-thread-66 com.arthur.main.Main - TaskThread 65 parse TASK 5951 chapter Task_id_005951_第五章 轮回界冥龙 done!
+         ERROR pool-1-thread-66 com.arthur.main.Main - ERROR in book writer writeChapter: CHAPTER IS NULL!
+         ERROR pool-1-thread-70 com.arthur.main.Main - 
+>>>>ERROR in parse Chapter 第十五章 道观打杂遇尹志平:http://read.qidian.com/BookReader/2889965,46797797.aspx Add to tasklist again. Task Id:7192 retryCounter:1271 giveUpCounter:15
+
+         ERROR pool-1-thread-42 com.arthur.main.Main - 
+>>>>ERROR in parse Chapter 第五十三章 石葵轮开:http://read.qidian.com/BookReader/2917408,47141325.aspx Add to tasklist again. Task Id:7197 retryCounter:1276 giveUpCounter:15
+
+         ERROR pool-1-thread-25 com.arthur.main.Main - 
+>>>>ERROR in parse Chapter 第五章 流窜的金兵小队:http://read.qidian.com/BookReader/2889965,46691792.aspx Add to tasklist again. Task Id:7196 retryCounter:1274 giveUpCounter:15
+
+         ERROR pool-1-thread-12 com.arthur.main.Main - 
+>>>>ERROR in parse Chapter 7 内门首次扬名:http://read.qidian.com/BookReader/2487343,41998739.aspx Add to tasklist again. Task Id:7195 retryCounter:1273 giveUpCounter:15
+
+         ERROR pool-1-thread-31 com.arthur.main.Main - 
+>>>>ERROR in parse Chapter 2 内门弟子的待遇:http://read.qidian.com/BookReader/2487343,41969422.aspx Add to tasklist again. Task Id:7194 retryCounter:1272 giveUpCounter:15
+
+         ERROR pool-1-thread-60 com.arthur.main.Main - 
+>>>>ERROR in parse Chapter 5 五天之后！生死剑斗:http://read.qidian.com/BookReader/2487343,41986768.aspx Add to tasklist again. Task Id:7192 retryCounter:1271 giveUpCounter:15
+
+         ERROR pool-1-thread-84 com.arthur.main.Main - 
+>>>>ERROR in parse Chapter 第二十一章 沼泽之地四:http://read.qidian.com/BookReader/2993215,48509940.aspx Add to tasklist again. Task Id:7193 retryCounter:1271 giveUpCounter:15
+
+         DEBUG pool-1-thread-60 com.arthur.main.Main - TaskThread 59 parse TASK 6053 chapter Task_id_006053_5 五天之后！生死剑斗 done!
+         ERROR pool-1-thread-60 com.arthur.main.Main - ERROR in book writer writeChapter: CHAPTER IS NULL!
+         DEBUG pool-1-thread-31 com.arthur.main.Main - TaskThread 30 parse TASK 6049 chapter Task_id_006049_2 内门弟子的待遇 done!
+         ERROR pool-1-thread-31 com.arthur.main.Main - ERROR in book writer writeChapter: CHAPTER IS NULL!
+         DEBUG pool-1-thread-12 com.arthur.main.Main - TaskThread 11 parse TASK 6051 chapter Task_id_006051_7 内门首次扬名 done!
+         ERROR pool-1-thread-12 com.arthur.main.Main - ERROR in book writer writeChapter: CHAPTER IS NULL!
+         DEBUG pool-1-thread-25 com.arthur.main.Main - TaskThread 24 parse TASK 6028 chapter Task_id_006028_第五章 流窜的金兵小队 done!
+         ERROR pool-1-thread-25 com.arthur.main.Main - ERROR in book writer writeChapter: CHAPTER IS NULL!
+         ERROR pool-1-thread-17 com.arthur.main.Main - 
+>>>>ERROR in parse Chapter 第十三章 再次升级赶赴终南:http://read.qidian.com/BookReader/2889965,46778151.aspx Add to tasklist again. Task Id:7202 retryCounter:1280 giveUpCounter:15
+
+         ERROR pool-1-thread-6 com.arthur.main.Main - 
+>>>>ERROR in parse Chapter 第十一章 神龙显威:http://read.qidian.com/BookReader/2917408,46959707.aspx Add to tasklist again. Task Id:7201 retryCounter:1279 giveUpCounter:15
+
+         DEBUG pool-1-thread-42 com.arthur.main.Main - TaskThread 41 parse TASK 6021 chapter Task_id_006021_第五十三章 石葵轮开 done!
+         ERROR pool-1-thread-42 com.arthur.main.Main - ERROR in book writer writeChapter: CHAPTER IS NULL!
+         ERROR pool-1-thread-9 com.arthur.main.Main - 
+>>>>ERROR in parse Chapter 10 不论胜败！只分生死:http://read.qidian.com/BookReader/2487343,42021479.aspx Add to tasklist again. Task Id:7200 retryCounter:1278 giveUpCounter:15
+
+         ERROR pool-1-thread-14 com.arthur.main.Main - 
+>>>>ERROR in parse Chapter 第五十一章 雷劫:http://read.qidian.com/BookReader/2917408,47137406.aspx Add to tasklist again. Task Id:7199 retryCounter:1277 giveUpCounter:15
+
+         DEBUG pool-1-thread-70 com.arthur.main.Main - TaskThread 69 parse TASK 6038 chapter Task_id_006038_第十五章 道观打杂遇尹志平 done!
+         ERROR pool-1-thread-70 com.arthur.main.Main - ERROR in book writer writeChapter: CHAPTER IS NULL!
+         ERROR pool-1-thread-13 com.arthur.main.Main - 
+>>>>ERROR in parse Chapter 第十章 武穆遗书到手:http://read.qidian.com/BookReader/2889965,46737872.aspx Add to tasklist again. Task Id:7198 retryCounter:1276 giveUpCounter:15
+
+         DEBUG pool-1-thread-14 com.arthur.main.Main - TaskThread 13 parse TASK 6019 chapter Task_id_006019_第五十一章 雷劫 done!
+         ERROR pool-1-thread-14 com.arthur.main.Main - ERROR in book writer writeChapter: CHAPTER IS NULL!
+         DEBUG pool-1-thread-9 com.arthur.main.Main - TaskThread 8 parse TASK 6056 chapter Task_id_006056_10 不论胜败！只分生死 done!
+         ERROR pool-1-thread-9 com.arthur.main.Main - ERROR in book writer writeChapter: CHAPTER IS NULL!
+         DEBUG pool-1-thread-6 com.arthur.main.Main - TaskThread 5 parse TASK 6018 chapter Task_id_006018_第十一章 神龙显威 done!
+         ERROR pool-1-thread-6 com.arthur.main.Main - ERROR in book writer writeChapter: CHAPTER IS NULL!
+         DEBUG pool-1-thread-17 com.arthur.main.Main - TaskThread 16 parse TASK 6034 chapter Task_id_006034_第十三章 再次升级赶赴终南 done!
+         ERROR pool-1-thread-17 com.arthur.main.Main - ERROR in book writer writeChapter: CHAPTER IS NULL!
+         DEBUG pool-1-thread-84 com.arthur.main.Main - TaskThread 83 parse TASK 5962 chapter Task_id_005962_第二十一章 沼泽之地四 done!
+         ERROR pool-1-thread-84 com.arthur.main.Main - ERROR in book writer writeChapter: CHAPTER IS NULL!
+         DEBUG pool-1-thread-13 com.arthur.main.Main - TaskThread 12 parse TASK 6041 chapter Task_id_006041_第十章 武穆遗书到手 done!
+         ERROR pool-1-thread-13 com.arthur.main.Main - ERROR in book writer writeChapter: CHAPTER IS NULL!
+         DEBUG pool-1-thread-77 com.arthur.main.Main - TaskThread 76 parse TASK 7190 chapter Task_id_007190_更新！ done!
+         DEBUG pool-1-thread-77 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\第九掌控者\Task_id_007190_更新！.txt Done!
+         DEBUG pool-1-thread-60 com.arthur.main.Main - TaskThread 59 parse TASK 7192 chapter Task_id_007192_第十五章 道观打杂遇尹志平 done!
+         DEBUG pool-1-thread-60 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\游侠系统\Task_id_007192_第十五章 道观打杂遇尹志平.txt Done!
+         ERROR pool-1-thread-12 com.arthur.main.Main - 
+>>>>ERROR in parse Chapter 第五章 流窜的金兵小队:http://read.qidian.com/BookReader/2889965,46691792.aspx Add to tasklist again. Task Id:7203 retryCounter:1281 giveUpCounter:15
+
+         ERROR pool-1-thread-84 com.arthur.main.Main - 
+>>>>ERROR in parse Chapter 第五十一章 雷劫:http://read.qidian.com/BookReader/2917408,47137406.aspx Add to tasklist again. Task Id:7204 retryCounter:1282 giveUpCounter:15
+
+         DEBUG pool-1-thread-12 com.arthur.main.Main - TaskThread 11 parse TASK 7196 chapter Task_id_007196_第五章 流窜的金兵小队 done!
+         DEBUG pool-1-thread-84 com.arthur.main.Main - TaskThread 83 parse TASK 7199 chapter Task_id_007199_第五十一章 雷劫 done!
+         ERROR pool-1-thread-84 com.arthur.main.Main - ERROR in book writer writeChapter: CHAPTER IS NULL!
+         ERROR pool-1-thread-12 com.arthur.main.Main - ERROR in book writer writeChapter: CHAPTER IS NULL!
+         ERROR pool-1-thread-9 com.arthur.main.Main - 
+>>>>ERROR in parse Chapter 第十三章 再次升级赶赴终南:http://read.qidian.com/BookReader/2889965,46778151.aspx Add to tasklist again. Task Id:7205 retryCounter:1283 giveUpCounter:15
+
+         ERROR pool-1-thread-31 com.arthur.main.Main - 
+>>>>ERROR in parse Chapter 第五十三章 石葵轮开:http://read.qidian.com/BookReader/2917408,47141325.aspx Add to tasklist again. Task Id:7207 retryCounter:1285 giveUpCounter:15
+
+         DEBUG pool-1-thread-9 com.arthur.main.Main - TaskThread 8 parse TASK 7202 chapter Task_id_007202_第十三章 再次升级赶赴终南 done!
+         ERROR pool-1-thread-9 com.arthur.main.Main - ERROR in book writer writeChapter: CHAPTER IS NULL!
+         ERROR pool-1-thread-17 com.arthur.main.Main - 
+>>>>ERROR in parse Chapter 10 不论胜败！只分生死:http://read.qidian.com/BookReader/2487343,42021479.aspx Add to tasklist again. Task Id:7208 retryCounter:1286 giveUpCounter:15
+
+         DEBUG pool-1-thread-17 com.arthur.main.Main - TaskThread 16 parse TASK 7200 chapter Task_id_007200_10 不论胜败！只分生死 done!
+         ERROR pool-1-thread-17 com.arthur.main.Main - ERROR in book writer writeChapter: CHAPTER IS NULL!
+         ERROR pool-1-thread-42 com.arthur.main.Main - 
+>>>>ERROR in parse Chapter 2 内门弟子的待遇:http://read.qidian.com/BookReader/2487343,41969422.aspx Add to tasklist again. Task Id:7206 retryCounter:1284 giveUpCounter:15
+
+         DEBUG pool-1-thread-42 com.arthur.main.Main - TaskThread 41 parse TASK 7194 chapter Task_id_007194_2 内门弟子的待遇 done!
+         ERROR pool-1-thread-42 com.arthur.main.Main - ERROR in book writer writeChapter: CHAPTER IS NULL!
+         DEBUG pool-1-thread-31 com.arthur.main.Main - TaskThread 30 parse TASK 7197 chapter Task_id_007197_第五十三章 石葵轮开 done!
+         ERROR pool-1-thread-31 com.arthur.main.Main - ERROR in book writer writeChapter: CHAPTER IS NULL!
+         ERROR pool-1-thread-14 com.arthur.main.Main - 
+>>>>ERROR in parse Chapter 第二十一章 沼泽之地四:http://read.qidian.com/BookReader/2993215,48509940.aspx. Have Retried once, so give up. retryCounter:1286 giveUpCounter:16
+
+         DEBUG pool-1-thread-14 com.arthur.main.Main - TaskThread 13 parse TASK 7193 chapter Task_id_007193_第二十一章 沼泽之地四 done!
+         ERROR pool-1-thread-14 com.arthur.main.Main - ERROR in book writer writeChapter: CHAPTER IS NULL!
+         DEBUG pool-1-thread-13 com.arthur.main.Main - TaskThread 12 parse TASK 7198 chapter Task_id_007198_第十章 武穆遗书到手 done!
+         DEBUG pool-1-thread-13 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\游侠系统\Task_id_007198_第十章 武穆遗书到手.txt Done!
+         DEBUG pool-1-thread-6 com.arthur.main.Main - TaskThread 5 parse TASK 7201 chapter Task_id_007201_第十一章 神龙显威 done!
+         DEBUG pool-1-thread-6 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\神通盖世\Task_id_007201_第十一章 神龙显威.txt Done!
+         DEBUG pool-1-thread-66 com.arthur.main.Main - TaskThread 65 parse TASK 7191 chapter Task_id_007191_第五章 轮回界冥龙 done!
+         DEBUG pool-1-thread-66 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\祖戒\Task_id_007191_第五章 轮回界冥龙.txt Done!
+         ERROR pool-1-thread-42 com.arthur.main.Main - 
+>>>>ERROR in parse Chapter 10 不论胜败！只分生死:http://read.qidian.com/BookReader/2487343,42021479.aspx Add to tasklist again. Task Id:7209 retryCounter:1287 giveUpCounter:16
+
+         DEBUG pool-1-thread-42 com.arthur.main.Main - TaskThread 41 parse TASK 7208 chapter Task_id_007208_10 不论胜败！只分生死 done!
+         ERROR pool-1-thread-42 com.arthur.main.Main - ERROR in book writer writeChapter: CHAPTER IS NULL!
+         ERROR pool-1-thread-17 com.arthur.main.Main - 
+>>>>ERROR in parse Chapter 第五十三章 石葵轮开:http://read.qidian.com/BookReader/2917408,47141325.aspx Add to tasklist again. Task Id:7210 retryCounter:1288 giveUpCounter:16
+
+         DEBUG pool-1-thread-17 com.arthur.main.Main - TaskThread 16 parse TASK 7207 chapter Task_id_007207_第五十三章 石葵轮开 done!
+         ERROR pool-1-thread-17 com.arthur.main.Main - ERROR in book writer writeChapter: CHAPTER IS NULL!
+         ERROR pool-1-thread-31 com.arthur.main.Main - 
+>>>>ERROR in parse Chapter 2 内门弟子的待遇:http://read.qidian.com/BookReader/2487343,41969422.aspx. Have Retried once, so give up. retryCounter:1288 giveUpCounter:17
+
+         DEBUG pool-1-thread-31 com.arthur.main.Main - TaskThread 30 parse TASK 7206 chapter Task_id_007206_2 内门弟子的待遇 done!
+         ERROR pool-1-thread-31 com.arthur.main.Main - ERROR in book writer writeChapter: CHAPTER IS NULL!
+         DEBUG pool-1-thread-12 com.arthur.main.Main - TaskThread 11 parse TASK 7204 chapter Task_id_007204_第五十一章 雷劫 done!
+         DEBUG pool-1-thread-12 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\神通盖世\Task_id_007204_第五十一章 雷劫.txt Done!
+         DEBUG pool-1-thread-9 com.arthur.main.Main - TaskThread 8 parse TASK 7205 chapter Task_id_007205_第十三章 再次升级赶赴终南 done!
+         DEBUG pool-1-thread-84 com.arthur.main.Main - TaskThread 83 parse TASK 7203 chapter Task_id_007203_第五章 流窜的金兵小队 done!
+         DEBUG pool-1-thread-9 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\游侠系统\Task_id_007205_第十三章 再次升级赶赴终南.txt Done!
+         DEBUG pool-1-thread-84 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\游侠系统\Task_id_007203_第五章 流窜的金兵小队.txt Done!
+         DEBUG pool-1-thread-17 com.arthur.main.Main - TaskThread 16 parse TASK 7210 chapter Task_id_007210_第五十三章 石葵轮开 done!
+         DEBUG pool-1-thread-17 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\神通盖世\Task_id_007210_第五十三章 石葵轮开.txt Done!
+         DEBUG pool-1-thread-25 com.arthur.main.Main - TaskThread 24 parse TASK 7195 chapter Task_id_007195_7 内门首次扬名 done!
+         DEBUG pool-1-thread-25 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\剑道独神\Task_id_007195_7 内门首次扬名.txt Done!
+         DEBUG pool-1-thread-42 com.arthur.main.Main - TaskThread 41 parse TASK 7209 chapter Task_id_007209_10 不论胜败！只分生死 done!
+         DEBUG pool-1-thread-42 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\剑道独神\Task_id_007209_10 不论胜败！只分生死.txt Done!
+         DEBUG pool-1-thread-70 com.arthur.main.Main - TaskThread 69 parse TASK 7192 chapter Task_id_007192_5 五天之后！生死剑斗 done!
+         DEBUG pool-1-thread-70 com.arthur.main.Main - Write File D:\data\webcraw\SITE\CATEGORY\剑道独神\Task_id_007192_5 五天之后！生死剑斗.txt Done!
          

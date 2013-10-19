@@ -4,7 +4,10 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+import org.apache.log4j.Logger;
+
 import com.arthur.bloomfilter.BloomFilter;
+import com.arthur.main.Main;
 
 public class Book {
 
@@ -15,9 +18,13 @@ public class Book {
 	private String author;
 	private String bookId;
 	private LinkedList<Chapter> chapters;
+	private volatile int lastUpdateChapterIndex = 0;		
+	private volatile long updateTime = 0;		//与1970-1-1 8:00的间隔（秒）
+	public static Logger logger = Logger.getLogger(Main.class.getName());
+	public static String BASE_URL = "http://read.qidian.com/BookReader/";
 	
 	//【待补充】利用bloomfilter对chapter的url进行查重；
-	private BloomFilter chapterBloomFilter = new BloomFilter();		
+	private BloomFilter bookBloomFilter = new BloomFilter(10000);		
 	
 	public Book(){
 		this.name = DEFAULT_NAME;
@@ -37,23 +44,29 @@ public class Book {
 		return category;
 	}
 
-	public Chapter newChapter(){
+/*	public Chapter newChapter(){
 		Chapter chapter = new Chapter();
 		addChapter(chapter);
 		return chapter;
-	}
+	}*/
 	
-	public Chapter newChapter(String url){
+	public boolean addChapter(String chapterUrl){
+		if(!bookBloomFilter.checkAndAdd(chapterUrl)){
+			logger.debug("Chapter ["+chapterUrl+"] have been added before!");
+			return false;
+		}
 		Chapter chapter = new Chapter();
-		chapter.setUrl(url);
-		addChapter(chapter);
-		return chapter;
-	}
-	
-	public void addChapter(Chapter chapter){
+		chapter.setUrl(chapterUrl);
+//		addChapter(chapter);
 		chapter.setBook(this);
 		chapters.add(chapter);
+		return true;
 	}
+	
+/*	public void addChapter(Chapter chapter){
+		chapter.setBook(this);
+		chapters.add(chapter);
+	}*/
 	
 	public Chapter getChapter(int index){
 		return chapters.get(index);
@@ -95,7 +108,21 @@ public class Book {
 		return author;
 	}
 	
-
+	public int getLastUpdateChapterIndex(){
+		return lastUpdateChapterIndex;
+	}
+	
+	public void setLastUpdateChapterIndex(int i){
+		this.lastUpdateChapterIndex = i;
+	}
+	
+	public long getUpdateTime(){
+		return updateTime;
+	}
+	
+	public void setUpdateTime(long i){
+		this.updateTime = i;
+	}
 
 	@Override
 	public String toString() {
